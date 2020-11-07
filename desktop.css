@@ -1,0 +1,130 @@
+/* for desktop */
+
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-11 {width:91.66%;}
+.col-12 {width:100%;}
+
+.logo{
+    text-align: left;
+}
+
+.nav-name{
+    text-align: right;
+
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 40px;
+    text-align: right;
+    
+    
+}
+.nav-menu a{
+padding: 3px;
+    
+}
+.nav-menu a:hover{
+    padding: 3px;
+        background-color:plum;
+color: white;
+    }
+
+
+    .main-profile .weather1{
+        position: absolute;
+        width: 120px;
+        transition: transform 1.5s, width 1.5s;
+        top: 40px;
+        right: 200px;
+
+    
+    }
+    
+    .main-profile .weather1:hover{
+        transform: rotate(360deg);
+        width: 140px;
+    }
+
+
+    .main-profile .weather2{
+       
+        width: 120px;
+        transition: transform 1.5s, width 1.5s;
+        bottom: -153px;
+        left:200px;
+        margin-right: 752px;
+    }
+    .main-profile .weather2:hover{
+        transform: rotate(360deg);
+        width: 140px;
+    }
+    a{
+        background-color: plum;
+    }
+    .main-profile p{
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main-profile{
+        text-align: center;
+        
+    }
+   .aboutme h2{
+       font-size: 40px;
+   }
+
+   .hr{
+    width: 200px;
+    padding-bottom: 40px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+
+   }
+
+   .aboutme .img2{
+    width: 250px;
+    border-radius: 1000px;
+    border: 3px solid white;
+    margin-top: 90px;
+    float: left;
+    
+   
+}
+.button{
+   margin-top: 40px;
+}
+.achievements{
+    padding-right: 50px;
+}
+.many-contract{
+  position: relative;
+}
+.all-buttons{
+    position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+margin-top: 200px;
+
+
+}
+.all-buttons button{
+
+}
+.footer-menu a{
+    display: inline;
+
+    
+}

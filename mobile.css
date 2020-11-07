@@ -1,0 +1,500 @@
+*{
+    
+    box-sizing: border-box;
+}
+.img{
+
+width: 100px;
+padding-top: 4px;
+
+}
+.navbar{
+    background-color: plum;
+  padding: 0% 1%;
+  text-align: center;
+    
+  
+    
+}
+
+.navbar::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+a{
+ text-decoration: none;
+ font-size: 1.2rem;
+ background-color: #c8f6ff;
+
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+
+[class*="col-"]{
+    width: 100%;
+
+}
+.nav-name{
+   
+   
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+.logo{
+ 
+}
+.navbar h1{ 
+color: white;
+padding-top: 25px;
+margin: 0;
+}
+.nav-menu a{
+    
+    border-radius: 10px;
+    margin: 7px;
+    padding: 10px;
+}
+.nav-menu a:hover{
+    background-color: grey;
+}
+
+
+
+/* profile design starts here */
+
+
+p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.content{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.main-profile{
+    padding-top: 130px;
+    padding-left: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.main-profile .weather1{
+    position: absolute;
+    width: 100px;
+    transition: transform 1.5s;
+    top: 7px;
+    right: 28px;
+
+}
+
+.main-profile .weather1:hover{
+    transform: rotate(360deg);
+
+}
+.main-profile .weather2{
+   position: absolute;
+    width: 100px;
+    transition: transform 1.5s;
+    bottom: -123px;
+    left: 42px;
+  
+}
+.main-profile .weather2:hover{
+    transform: rotate(360deg);
+}
+.content h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.content p{
+    color:grey;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    
+}
+
+.main-profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* profile design ends here */
+
+.aboutme{
+    margin-top: 200px;
+    background-color: pink;
+    text-align: center;
+    padding: 20px;
+}
+.hr{
+    width: 104px;
+    margin: 0 auto;
+    border: 2px dotted black;
+    
+}
+.aboutme h2{
+    text-align: center;
+   
+}
+.aboutme .img2{
+    width: 150px;
+    border-radius: 100px;
+    border: 3px solid white;
+    
+   
+}
+
+.aboutdesc a{
+background-color: pink;
+color: black;
+}
+.aboutdesc p{
+   
+}
+.hr2{
+    border: 1px solid purple;
+
+}
+.button{
+    padding: 14px;
+    font-size: 17px;
+    border: none;
+    border-radius: 40px;
+    background-color: #b3aaac;
+   
+}
+
+.button:hover{
+   box-shadow: 4px 4px 8px black;
+}
+.aboutdesc .p{
+    text-align: left;
+}
+
+.aboutdesc .p2{
+
+    margin-bottom: 48px;
+    text-align: left;
+    }
+    .aboutdesc .p3{
+        text-align: left;
+    }
+    .aboutme::after{
+        content: '';
+        display: table;
+        clear: both;
+
+    }
+    .card{
+        background-color: sandybrown;
+        height: 610px;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+
+    }
+
+    .card:hover{
+       box-shadow: 0px 6px 8px 4px black;
+    }
+
+    .cardimg{
+        border: 3px solid white;
+        border-radius: 50%;
+        width: 100px;
+        padding: 2px;
+    }
+    .card-img{
+        text-align: center;
+    }
+    .card h2{
+        text-align: center;
+        background-color: sienna;
+        padding: 10px;
+    }
+    .main-card-all{
+        padding: 20px;
+       
+    }
+
+    .animation{
+        
+        
+        padding: 0px;
+        padding-top: 8px;
+    }
+    
+    .animation li::before{
+        content: '';
+        background-color: rgb(114, 223, 223);
+        border-radius: 1000px;
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        top: calc(100% + 5px);
+        left: 0;
+    }
+    .animation li{
+        list-style: none;
+        margin: 30px 10px;
+        font-weight: bolder;
+        position: relative;
+
+    }
+
+    .animation li::after{
+        content: '';
+        background-color: rgb(9, 136, 136);
+        border-radius: 1000px;
+        position: absolute;
+        width: 0%;
+        height: 8px;
+        top: calc(100% + 5px);
+         left: 0;
+
+
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-fill-mode: forward;
+        animation-iteration-count: infinite;
+
+
+    }
+
+   .animation li.html::after{
+     animation-name: html;
+   }
+   .animation li.css::after{
+    animation-name: css;
+  }
+
+  .animation li.java::after{
+    animation-name: java;
+  }
+
+  .animation li.boot::after{
+    animation-name: boot;
+  }
+
+  .animation li.jack::after{
+    animation-name: jack;
+  }
+  .animation li.c::after{
+    animation-name: c;
+  }
+  .animation li.disco::after{
+    animation-name: disco;
+  }
+
+
+
+
+    @keyframes html{
+    to{
+        width: 90%;
+    }  
+    
+    }
+    @keyframes css{
+        to{
+            width: 80%;
+        }  
+        
+        }
+   
+        @keyframes java{
+            to{
+                width: 70%;
+            }  
+            
+            }
+   
+            @keyframes boot{
+                to{
+                    width: 60%;
+                }  
+                
+                }
+   
+                @keyframes jack{
+                    to{
+                        width: 50%;
+                    }  
+                    
+                    }
+   
+                    @keyframes c{
+                        to{
+                            width: 40%;
+                        }  
+                        
+                        }
+                       
+                        @keyframes disco{
+                            to{
+                                width: 30%;
+                            }  
+                            
+                            }
+
+
+    .main-card-all::after{
+        content: '';
+        clear: both;
+        display: table;
+    }    
+    
+
+    .main-contract::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+.main-contract{
+background-color: turquoise;
+padding: 20px;
+}
+.achievementh2{
+    text-align: center;
+    padding-top: 5px;
+}
+.input1{
+    width: 100%;
+    margin-top: 22px;
+    height: 40px;
+   border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    background-color:white;
+}
+.input2{
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color:white;
+    text-align: center;
+    
+}
+.textarea{
+    
+    background-color:white;
+    resize: none;
+    width: 100%;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    text-align: center;
+}
+.button2{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 14px;
+ cursor: pointer;
+    
+   
+}
+.button2:hover{
+ background-color:paleturquoise ;
+ box-shadow: 4px 4px 8px black;
+ 
+   
+}
+.contract-list{
+    text-align: center;
+    
+}
+.many-contract{
+    text-align: center;
+    
+}
+.all-buttons{
+    padding: 20px;
+    
+}
+.all-buttons button{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    margin: 10px;
+    
+    border-radius: 25px;
+   border: none;
+    background-color: white;
+    
+    transform: width;
+
+}
+
+.all-buttons button:hover{
+    background-color: turquoise;
+   
+
+    transition: .3s;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+}
+
+ .footer a{
+    background-color: black;
+     color: white;
+     padding: 10px;
+     
+ }
+ .footer p{
+     color: white;
+ }
+ .main-contract::after{
+     content: '';
+     clear: both;
+     display: table;
+ }
+ .footer::after{
+     clear: both;
+     display: table;
+     content: '';
+ }
+
+ .footer a:hover{
+    color: pink;
+    text-decoration: underline;
+ }
+ .footer-menu{
+     margin-top: 18px;
+     
+ }
+ .footer-menu a{
+     display: block;
+     
+ }
